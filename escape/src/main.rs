@@ -7,7 +7,7 @@ use std::result::Result;
 use std::io::Error;
 
 fn main() {
-    println!("If you want to stop, please press esc key!");
+    println!("If you want to stop, please press x key!");
     let (sender, receiver) = channel();
 
     spawn(move || {
@@ -29,10 +29,6 @@ fn main() {
         i = i + 1;
         if receiver.try_recv().ok() != None {
             break;
-        } else {
-            continue;
         }
     }
-
-
 }
