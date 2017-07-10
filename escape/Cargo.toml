@@ -1,5 +1,5 @@
 [package]
-name = "rust_sandbox"
+name = "escape"
 version = "0.1.0"
 authors = ["aimof <aimof.aimof@gmail.com>"]
 
