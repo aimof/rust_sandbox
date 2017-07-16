@@ -3,9 +3,9 @@ use std::io::BufRead;
 fn main() {
     loop {
         let s = read_string();
-        match s {
-            "exit" => break;
-            _ => sort_string(s);
+        let c = s.chars();
+        match c {
+            後
         }
     }
 }
@@ -17,6 +17,6 @@ fn read_string() -> String {
 }
 
 fn sort_string(s: String) {
-    let s_slice: &str = &s[..];
+    let
     let mut chars: Vec<char> = s_slice.chars().collect();
 }
